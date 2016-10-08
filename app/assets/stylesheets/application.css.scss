@@ -1,4 +1,15 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-@import 'custom-variables';
-@import 'landing-page';
+
+
+
+@import 'base/helpers';
+@import 'base/overrides';
+
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+
+@import 'pages/landing-page';
+@import 'components/font-awesome.min';

@@ -1,0 +1,28 @@
+h1, h2, h3 {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+ul {
+  padding: 20px;
+  li {
+    text-decoration: none;
+    font-size: 22px;
+  }
+}
+
+a {
+  font-family: $brand-primary;
+  font-weight: 800;
+  text-transform: uppercase;
+  &:hover {
+    text-decoration: none;
+  }
+}

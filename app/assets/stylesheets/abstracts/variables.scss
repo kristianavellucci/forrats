@@ -1,0 +1,179 @@
+$brown: #3B1510;
+$beige: #EAB896;
+$red: #A51919;
+
+/*Software Reviews*/
+$sr-success: #75953c;
+$sr-almost: #c0d88d;
+$sr-warning: #f9dc00;
+$sr-danger: #e93225;
+$sr-green: #93bb3f;
+$sr-purple: #8656a3;
+
+/* Brand Typography */
+$brand-primary: 'Kanit', sans-serif;
+$brand-secondary: 'Abril Fatface', cursive;
+$brand-body: 'Lato', sans-serif;
+
+/* Brand Colours */
+$pink: #ad4e5b;
+$yellow: #e7ee60;
+$orange: #cca547;
+$dark-grey: #333333;
+$mid-grey: #969696;
+$light-grey: #e0e0e0;
+
+/* Helper Classes */
+.large-text {
+	font-size: 125px;
+	font-family: 'Kanit', sans-serif;
+	@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max)  {
+	  font-size: 75px;
+	  line-height: .9;
+	}
+}
+
+.mid-text {
+	font-size: 75px;
+	line-height: .8;
+	@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max)  {
+	  font-size: 50px;
+	}
+}
+
+.center {
+	display: block;
+	margin: 0 auto;
+}
+
+.text-center-sm {
+	@media (min-width: $screen-xs-min) and (max-width: $screen-sm-max)  {
+	  text-align: center;
+	}
+}
+
+.padding-50-sm {
+	@media (min-width: $screen-xs-min) and (max-width: $screen-sm-max)  {
+	  padding: 50px !important;
+	}
+}
+
+.width-100 {width: 100%;}
+
+.dark-grey {color: $dark-grey;}
+.mid-grey {color: $mid-grey;}
+.light-grey {color: $light-grey;}
+.pink {color: $pink;}
+.yellow {color: $yellow;}
+.orange {color: $orange;}
+.white {color: white;}
+
+.white-bg {background: white}
+.light-grey-bg {background: $light-grey;}
+.yellow-bg {background: $yellow;}
+.orange-bg {background: $orange;}
+.dark-bg {background: $dark-grey;}
+
+.font-100 {font-weight: 100;}
+.font-200 {font-weight: 200;}
+.font-300 {font-weight: 300;}
+.font-400 {font-weight: 400;}
+.font-500 {font-weight: 500;}
+.font-600 {font-weight: 600;}
+.font-700 {font-weight: 700;}
+.font-800 {font-weight: 800;}
+.font-900 {font-weight: 900;}
+
+
+.no-padding {padding: 0;}
+.no-margin {margin: 0;}
+
+.padding-top-25 {padding-top: 25px;}
+.padding-top-50 {padding-top: 50px;}
+.padding-top-75 {padding-top: 75px;}
+.padding-top-100 {padding-top: 100px;}
+
+.padding-bottom-30 {padding-bottom: 30px}
+
+.padding-tb-25 {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.padding-tb-50 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.padding-tb-75 {
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+.padding-tb-100 {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.padding-25 {padding: 25px;}
+.padding-50 {padding: 50px;}
+.padding-75 {padding: 75px;}
+.padding-100 {padding: 100px;}
+
+.padding-lr-25 {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.padding-lr-50 {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.padding-lr-75 {
+	padding-left: 75px;
+	padding-right: 75px;
+}
+.padding-lr-100 {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.padding-lr-200 {
+	padding-left: 200px;
+	padding-right: 200px;
+}
+.padding-5 {padding: 5px;}
+.margin-5 {margin: 5px;}
+
+.margin-lr-35 {margin: 0 35px;}
+.margin-lr-50 {margin: 0 50px;}
+.margin-lr-100 {margin: 0 100px;}
+.margin-lr-150 {margin: 0 150px;}
+.margin-lr-200 {margin: 0 200px;}
+
+.margin-bottom-50 { margin-bottom: 30px;}
+.border-bottom { border-bottom: solid 1px #ccc; margin-bottom: 10px;}
+
+.rotate {
+	transform: rotate (-90deg);
+	-webkit-transform: rotate(-90deg); /* Safari */
+	-moz-transform: rotate(-90deg); /* Firefox */
+	-ms-transform: rotate(-90deg); /* IE */
+	-o-transform: rotate(-90deg); /* Opera */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
+	float: left;
+}
+
+/*Bootstrap Overrides*/
+
+.btn {
+	border-radius: 0;
+	border: none;
+	font-weight: 200;
+	letter-spacing: 1px;
+}
+
+.btn-primary {
+	background: $pink;
+	padding: 15px 30px;
+	margin-top: 15px;
+	font-size: 20px;
+	font-weight: 800;
+	font-family: 'Kanit', sans-serif;
+	margin-right: -23px;
+}

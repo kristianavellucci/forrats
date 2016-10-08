@@ -1,47 +1,35 @@
 <section id="header">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
-			
-			<div class="col-md-3 text-center">
-				<nav>
-					<h2 class="hidden">Navigation</h2>
-					<%= image_tag 'logo.png', alt:'Kristiana Vellucci Design Logo'%>
-					<ul class="text-center">
-						<li><a href="#">About</a></li>
-						<li><a href="#">Work</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Blog</a></li>
-					</ul>
-					<a href="#">
-						<div class="row nav-cta">
-							<div class="col-md-3">
-								<p>Rocket</p>
-							</div>
-							<div class="col-md-9 text-left">
-								<p>Questions/Comments?</p>
-								<p class="supporting-text">Let me know!</p>
-							</div>
-						</div>
-					</a>
-				</nav>
+			<div class="col-md-8">
+				<%= image_tag 'logo.png', alt:'Logo'%>
 			</div>
-
-			<div class="col-md-9 text-center">
-				<h1>Hello World</h1>
+			<div class="col-md-4">
+				<h2 class="text-right">Menu</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 white">
+				<p>
+					"One thing I learned working at magazines was that if you couldn't get people to look at a page or a cover, then you were fired.”
+					<br><br>
+					-Barbara Kruger
+				</p>
 			</div>
 		</div>
 	</div>
 </section>
 
 <section id="about">
-	<div class="container">
+	<div class="margin-lr-100 white-bg padding-lr-50">
 		<div class="row">
 			<div class="col-md-6">
-				<a href="#" class="rotate blog-link">Read My Mind</a>
-				<%= image_tag 'self.png', alt:'Kristiana Vellucci Illustration'%>
+				<a href="#" class="rotate blog-link pink">Read My Mind</a>
+				<div class="pink-divide rotate"></div>
+				<%= image_tag 'self.png', alt:'Kristiana Vellucci Illustration', class:'center' %>
 			</div>
-			<div class="col-md-6">
-				<h2>Hey, I'm Kristiana! Welcome to my portfolio!</h2>
+			<div class="col-md-6 padding-100">
+				<h2 class="dark-grey">Hey, I'm Kristiana! Welcome to my portfolio!</h2>
 				<div class="pink-divide"></div>
 				<p>
 					Clearly I don’t do very much because my current site kind of sort of really doesn’t exist. Maybe one day I’ll actually do work on my personal site. I’ll be in Europe until the middle of May. I’m mentioning that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs.
@@ -51,229 +39,910 @@
 				</p>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<a href="#">View My Resume</a>
-			</div>
-		</div>
+	</div>
+	<div class="container-fluid margin-lr-35">
+		<div class="col-md-12 dark-bg padding-tb-50"></div>
 	</div>
 </section>
 
 <section id="featured-work">
-	<div class="container">
-		<div class="col-md-5">
-			<h2>Recent Work</h2>
-			<p>Do you believe in outerspace? I'm not sure I do, but I believe aliens live amongst us.</p>
+	<div class="container-fluid white padding-tb-100 margin-lr-50 dark-bg">
+		<div class="col-md-4 col-md-offset-1">
+			<h2 class="featured-work--title large-text">Recent Work</h2>
+			<p class="featured-work--blurb padding-tb-50">Do you believe in outerspace? I'm not sure I do, but I believe aliens live amongst us.</p>
 			<div class="feature-navigation">
 				<h3>Other Pieces</h3>
 				<div class="row">
-					<div class="col-md-2 feature-thumb">
-						<h4>Piece 1</h4>
+					<div class="col-md-2 padding-5">
+						<%= image_tag 'sr-thumb.jpg', alt:'Software Reviews Thumb', class:'featured-work--thumb' %>
 					</div>
-					<div class="col-md-2 feature-thumb">
-						<h4>Piece 2</h4>
+					<div class="col-md-2 padding-5">
+						<%= image_tag 'sr-thumb.jpg', alt:'Software Reviews Thumb', class:'featured-work--thumb' %>
 					</div>
-					<div class="col-md-2 feature-thumb">
-						<h4>Piece 3</h4>
+					<div class="col-md-2 padding-5">
+						<%= image_tag 'sr-thumb.jpg', alt:'Software Reviews Thumb', class:'featured-work--thumb' %>
 					</div>
-					<div class="col-md-2 feature-thumb">
-						<h4>Piece 4</h4>
+					<div class="col-md-2 padding-5">
+						<%= image_tag 'sr-thumb.jpg', alt:'Software Reviews Thumb', class:'featured-work--thumb' %>
 					</div>
-					<div class="col-md-2 feature-thumb">
-						<h4>Piece 5</h4>
-					</div>
-					<div class="col-md-2 feature-thumb">
-						<h4>Piece 6</h4>
+					<div class="col-md-2 padding-5">
+						<%= image_tag 'sr-thumb.jpg', alt:'Software Reviews Thumb', class:'featured-work--thumb' %>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="col-md-7">
-			<div class="feature-preview"></div>
+		<div class="col-md-6">
+			<div class="featured-work--preview">
+				<%= image_tag 'sr-preview.jpg', alt:'Software Reviews', class:'padding-50'%>
+			</div>
+		</div>
+		<div class="col-md-1">
+			<a href="#">
+				<span class="fa fa-chevron-up featured-work--nav__back white"></span>
+			</a>
+			<a href="#">
+				<div class="featured-work--nav-square active"></div>
+			</a>
+			<a href="#">
+				<div class="featured-work--nav-square"></div>
+			</a>
+			<a href="#">
+				<div class="featured-work--nav-square"></div>
+			</a>
+			<a href="#">
+				<div class="featured-work--nav-square"></div>
+			</a>
+			<a href="#">
+				<div class="featured-work--nav-square"></div>
+			</a>
+			<a href="#">
+				<span class="fa fa-chevron-down featured-work--nav__forward white"></span>
+			</a>
 		</div>
 	</div>
 </section>
 
-<section id="services">
-	<div class="container">
+<section id="services" class="light-grey-bg">
+	<div class="container-fluid margin-lr-35">
+		<div class="col-md-12 dark-bg padding-tb-50"></div>
+	</div>
+	<div class="margin-lr-100 padding-tb-100 white-bg padding-lr-50">
 		<div class="row">
 			<div class="col-md-12">
-				<h2>What I Can Do</h2>
+				<h2 class="large-text light-grey">Services</h2>
+				<p class="services--subtext dark-grey">What I Can Do</p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-3">
-				<img src="#" alt="Branding Icon">
-				<h3>Branding</h3>
-				<ul>
-					<li>Brand Identity</li>
-					<li>Style Guide</li>
-					<li>Corporate Identity</li>
-					<li>Logo Design</li>
-					<li>Social Media Marketing</li>
-				</ul>
+				<div class="services--item padding-50">
+					<span class="services--item__icon fa fa-bullseye padding-50 yellow"></span>
+					<h3 class="services--item__title light-grey">Branding</h3>
+					<ul class="mid-grey">
+						<li>Brand Identity</li>
+						<li>Style Guide</li>
+						<li>Corporate Identity</li>
+						<li>Logo Design</li>
+						<li>Social Media Marketing</li>
+					</ul>
+				</div>
 			</div>
 			<div class="col-md-3">
-				<img src="#" alt="Branding Icon">
-				<h3>Interactive</h3>
-				<ul>
-					<li>Print and Editorial</li>
-					<li>Web and Interactive</li>
-					<li>Mobile Applications</li>
-					<li>Packaging</li>
-					<li>Infographics</li>
-				</ul>
+				<div class="services--item padding-50">
+					<span class="services--item__icon fa fa-rocket padding-50 yellow"></span>
+					<h3 class="services--item__title light-grey">Interactive</h3>
+					<ul class="mid-grey">
+						<li>Print and Editorial</li>
+						<li>Web and Interactive</li>
+						<li>Mobile Applications</li>
+						<li>Packaging</li>
+						<li>Infographics</li>
+					</ul>
+				</div>
 			</div>
 			<div class="col-md-3">
-				<img src="#" alt="Branding Icon">
-				<h3>Development</h3>
-				<ul>
-					<li>UX/UI Design</li>
-					<li>CMS</li>
-					<li>HTML5</li>
-					<li>CSS3/OOCSS/SCSS</li>
-					<li>Javsacript</li>
-				</ul>
+				<div class="services--item padding-50">
+					<span class="services--item__icon fa fa-puzzle-piece padding-50 yellow"></span>
+					<h3 class="services--item__title light-grey">Development</h3>
+					<ul class="mid-grey">
+						<li>UX/UI Design</li>
+						<li>CMS</li>
+						<li>HTML5</li>
+						<li>CSS3/OOCSS/SCSS</li>
+						<li>Javsacript</li>
+					</ul>
+				</div>
 			</div>
 			<div class="col-md-3">
-				<img src="#" alt="Branding Icon">
-				<h3>Creative</h3>
-				<ul>
-					<li>Illustration</li>
-					<li>Digital Painting</li>
-					<li>Oil Painting</li>
-					<li>Art Prints</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section id="recent">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<h2>Recent Posts</h2>
-				<ul>
-					<li>
-						<div class="row">
-							<div class="col-md-3">
-								<p class="day">25</p>
-								<p class="month">April</p>
-							</div>
-							<div class="col-md-9">
-								<h3>Inspired by Andy Denzler</h3>
-								<p class="category">Category, category</p>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="row">
-							<div class="col-md-3">
-								<p class="day">14</p>
-								<p class="month">May</p>
-							</div>
-							<div class="col-md-9">
-								<h3>Bridging the (Gender) Gap</h3>
-								<p class="category">Category, category</p>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="row">
-							<div class="col-md-3">
-								<p class="day">17</p>
-								<p class="month">February</p>
-							</div>
-							<div class="col-md-9">
-								<h3>5 Reasons All Freelancers Should...</h3>
-								<p class="category">Category, category</p>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="col-md-6">
-				<h2>Recent Clients</h2>
-				<div class="clients">
-					<div class="row">
-						<div class="col-md-4">
-							<img src="#" alt="DevLdn">
-						</div>
-						<div class="col-md-4">
-							<img src="#" alt="Oakview Appraisals">
-						</div>
-						<div class="col-md-4">
-							<img src="#" alt="Prana Homeopathy">
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4">
-							<img src="#" alt="Upcycle Bowties">
-						</div>
-						<div class="col-md-4">
-							<img src="#" alt="Moss Digital">
-						</div>
-						<div class="col-md-4">
-							<img src="#" alt="Kitco Metals">
-						</div>
-					</div>
+				<div class="services--item padding-50">
+					<span class="services--item__icon fa fa-paint-brush padding-50 yellow"></span>
+					<h3 class="services--item__title light-grey">Creative</h3>
+					<ul class="mid-grey">
+						<li>Illustration</li>
+						<li>Digital Painting</li>
+						<li>Oil Painting</li>
+						<li>Art Prints</li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section id="resume">
-	<div class="container-fluid">
+<section id="recent" class="light-grey-bg">
+	<div class="margin-lr-100 padding-top-100 white-bg padding-lr-50">
 		<div class="row">
-			<div class="col-md-12 text-center">
-				<h2>Interested in learning more?</h2>
-				<a href="#">My Resume</a>
+			<h2 class="large-text light-grey">Recents</h2>
+			<div class="col-md-9 blog">
+				<h2>Blog Posts</h2>
+				<div class="row blog--top3">
+					<div class="col-md-4 blog--post">
+						<span>Category</span>
+						<h3>This is a Blog Title. Cool!</h3>
+						<p>This is the intro text to the blog post. I wonder what it will be...</p>
+						<a href="#" class="recent--link">Read More</a>
+					</div>
+					<div class="col-md-4 blog--post blog--post__center">
+						<span>Category</span>
+						<h3>This is a Blog Title. Cool!</h3>
+						<p>This is the intro text to the blog post. I wonder what it will be...</p>
+						<a href="#" class="recent--link">Read More</a>
+					</div>
+					<div class="col-md-4 blog--post">
+						<span>Category</span>
+						<h3>This is a Blog Title. Cool!</h3>
+						<p>This is the intro text to the blog post. I wonder what it will be...</p>
+						<a href="#" class="recent--link">Read More</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 blog--post">
+						<span>Category</span>
+						<h3>This is a Blog Title. Cool!</h3>
+						<p>This is the intro text to the blog post. I wonder what it will be...</p>
+						<a href="#" class="recent--link">Read More</a>
+					</div>
+					<div class="col-md-4 blog--post blog--post__center">
+						<span>Category</span>
+						<h3>This is a Blog Title. Cool!</h3>
+						<p>This is the intro text to the blog post. I wonder what it will be...</p>
+						<a href="#" class="recent--link">Read More</a>
+					</div>
+					<div class="col-md-4 blog--post">
+						<span>Category</span>
+						<h3>This is a Blog Title. Cool!</h3>
+						<p>This is the intro text to the blog post. I wonder what it will be...</p>
+						<a href="#" class="recent--link">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 clients">
+				<h2>Clients</h2>
+
+
+					<div class="row">
+						<div class="col-md-12 clients--company">
+							<h3>Refergle</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 clients--company">
+							<h3>Oakview Appraisals</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 clients--company">
+							<h3>Kitco Metals</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 clients--company">
+							<h3>Upcycle Bowties</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 clients--company">
+							<h3>Prana Homeopathy</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 clients--company">
+							<h3>Sasquatch Studios</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 clients--company">
+							<h3>DEVLDN</h3>
+						</div>
+					</div>
+
+
 			</div>
 		</div>
 	</div>
 </section>
 
-<section id="contact">
-	<div class="container">
+<section id="resume" class="effect6">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h2>Be Heard</h2>
-				<a href="#">Get in Touch</a>
+				<h2 class="resume--title white font-500">Interested in learning more?</h2>
+				<a href="#" class="btn btn-lg btn-primary yellow">My Resume <span class="fa fa-blind"></span></a>
 			</div>
 		</div>
 	</div>
 </section>
 
-<footer>
+<section id="contact" class="padding-tb-100">
+	<div class="margin-lr-100">
+		<div class="row">
+			<div class="col-md-1">
+				<div class="yellow-squares">
+					<div class="square yellow-bg"></div>
+					<div class="square yellow-bg"></div>
+					<div class="square yellow-bg"></div>
+					<div class="square yellow-bg"></div>
+					<div class="square yellow-bg"></div>
+				</div>
+				<div class="orange-squares">
+					<div class="square orange-bg"></div>
+					<div class="square orange-bg"></div>
+					<div class="square orange-bg"></div>
+					<div class="square orange-bg"></div>
+					<div class="square orange-bg"></div>
+				</div>
+			</div>
+			<div class="col-md-10 text-center padding-lr-200">
+				<h2 class="large-text light-grey">Be Heard</h2>
+				<p class="padding-bottom-30">Like what you see? Maybe you just want to grab a coffee and talk about traveling to far off distant lands -- let's do it. Shoot me a message, I promise I'll get back to you as soon as possible. Like what you see? Maybe you just want to grab a coffee and talk about traveling to far off distant lands -- let's do it.</p>
+				<form action="">
+					<div class="row">
+						<div class="col-md-6 no-padding">
+							<input type="text" placeholder="Name" class="short-text">
+							<input type="text" placeholder="Subject" class="short-text">
+							<input type="text" placeholder="Email" class="short-text">
+						</div>
+						<div class="col-md-6 no-padding">
+							<input type="textarea" placeholder="Message" class="long-text">
+						</div>
+					</div>
+				</form>
+				<a href="#" class="btn btn-primary pull-right">Get in Touch</a>
+			</div>
+			<div class="col-md-1 no-padding">
+				<div class="yellow-squares secondary-squares">
+					<div class="square yellow-bg"></div>
+					<div class="square yellow-bg"></div>
+					<div class="square yellow-bg"></div>
+					<div class="square yellow-bg"></div>
+					<div class="square yellow-bg"></div>
+				</div>
+				<div class="orange-squares secondary-squares">
+					<div class="square orange-bg"></div>
+					<div class="square orange-bg"></div>
+					<div class="square orange-bg"></div>
+					<div class="square orange-bg"></div>
+					<div class="square orange-bg"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="dark-bg white font-100">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-3">
-				<img src="#" alt="Logo">
+			<div class="col-md-3 footer-img">
+				<%= image_tag 'logo.png', alt:'Logo'%>
 			</div>
-			<div class="col-md-9">
+			<div class="col-md-9 padding-tb-75">
 				<ul>
-					<li>Portfolio</li>
-					<li>About</li>
-					<li>Contact</li>
-					<li>Blog</li>
+					<li class="footer--nav-item">Portfolio</li>
+					<li class="footer--nav-item">About</li>
+					<li class="footer--nav-item">Contact</li>
+					<li class="footer--nav-item">Blog</li>
 				</ul>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-3">
-				<ul>
-					<li>LinkedIn</li>
-					<li>Pinterest</li>
-					<li>Instagram</li>
-					<li>Wordpress</li>
-				</ul>
+			<div class="col-md-3 text-center">
+				<a href="#" class="dark-grey margin-5"><span class="footer-sm fa fa-linkedin white-bg"></span></a>
+				<a href="#" class="dark-grey margin-5"><span class="footer-sm fa fa-instagram white-bg"></span></a>
+				<a href="#" class="dark-grey margin-5"><span class="footer-sm fa fa-github white-bg"></span></a>
+				<a href="#" class="dark-grey margin-5"><span class="footer-sm fa fa-pinterest-p white-bg"></span></a>
+				<p>Made by Yours Truly</p>
 			</div>
-			<div class="col-md-9">
+			<div class="col-md-9 hidden-xs">
 				<div class="col-md-3">1</div>
 				<div class="col-md-3">2</div>
 				<div class="col-md-3">3</div>
+				<div class="col-md-3">4</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+<!-- Work Pages: Software Reviews -->
+<section class="project-header sr-header white padding-50">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8">
+				<%= image_tag 'logo.png', alt:'Logo'%>
+			</div>
+			<div class="col-md-4">
+				<h2 class="text-right">Menu</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 project-header--title">
+				<h1 class="large-text text-center">Software Reviews</h1>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="container">
+	<section class="details padding-50">
+		<div class="row">
+			<div class="col-md-8">
+				<h3 class="details-category light-grey">Branding, Front-End, Interactive</h3>
+				<h2 class="details--name light-grey">Software Reviews</h2>
+				<p class="details--description">
+					Clearly I don’t do very much because my current site kind of sort of really doesn’t exist. Maybe one day I’ll actually do work on my personal site. I’ll be in Europe until the middle of May. I’m mentioning that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs.
+					<br>
+ 					I’m mentioning that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs.
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h2 class="mid-grey margin-bottom-50">Project Details</h2>
+				<div class="row border-bottom margin-5">
+					<div class="col-md-4 no-padding">
+						<h3 class="no-margin mid-grey">Title</h3>
+					</div>
+					<div class="col-md-8 no-padding">
+						<p>Download</p>
+					</div>
+				</div>
+				<div class="row border-bottom margin-5">
+					<div class="col-md-4 no-padding">
+						<h3 class="no-margin mid-grey">Date</h3>
+					</div>
+					<div class="col-md-8 no-padding">
+						<p>SoftwareReviews</p>
+					</div>
+				</div>
+				<div class="row border-bottom margin-5">
+					<div class="col-md-4 no-padding">
+						<h3 class="no-margin mid-grey">Tags</h3>
+					</div>
+					<div class="col-md-8 no-padding">
+						<p>SoftwareReviews</p>
+					</div>
+				</div>
+				<div class="row border-bottom margin-5">
+					<div class="col-md-4 no-padding">
+						<h3 class="no-margin mid-grey">Url</h3>
+					</div>
+					<div class="col-md-8 no-padding">
+						<p>Download</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<div class="container-fluid">
+	<section class="site padding-tb-100">
+		<div class="row">
+			<div class="col-md-8">
+				<%= image_tag 'sr-website.png', alt:'Desktop Survey', class:'center width-100' %>
+			</div>
+			<div class="col-md-4">
+				<h2 class="mid-text padding-50 light-grey text-center-sm">Website</h2>
+				<p class="padding-lr-50 text-center-sm">Clearly I don’t do very much because my current site kind of sort of really doesn’t exist. Maybe one day I’ll actually do work on my personal site. I’ll be in Europe until the middle of May. I’m mentioning that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs.
+				<br>
+			 	I’m mentioning that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs. I’m me that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="mobile-survey">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="mid-text padding-50 light-grey text-center-sm">Mobile Survey</h2>
+				<%= image_tag 'mobile-survey.jpg', alt:'Desktop Survey', class:'center width-100' %>
+			</div>
+		</div>
+	</section>
+
+	<section class="desktop-survey">
+		<div class="row">
+			<div class="col-md-4 padding-tb-100">
+				<h2 class="mid-text padding-50 white text-center-sm">Desktop Survey</h2>
+				<p class="padding-lr-50 text-center-sm">Clearly I don’t do very much because my current site kind of sort of really doesn’t exist. Maybe one day I’ll actually do work on my personal site. I’ll be in Europe until the middle of May. I’m mentioning that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs.</p>
+			</div>
+			<div class="col-md-8">
+				
+
+
+
+
+				<%= image_tag 'desktop-survey.jpg', alt:'Desktop Survey', class:'width-100' %>
+			</div>
+		</div>
+	</section>
+
+	<section class="typography padding-100 padding-50-sm">
+		<h2 class="mid-text padding-50 text-center-sm">Typography</h2>
+		<div class="row text-center">
+			<div class="col-md-4 typography--montserrat">
+				<p class="large-text">Aa</p>
+				<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>!@#$%^&*-_=+;:’”,.?<>/\|{}[]()</p>
+			</div>
+			<div class="col-md-4 typography--roboto">
+				<p class="large-text">Aa</p>
+				<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>!@#$%^&*-_=+;:’”,.?<>/\|{}[]()</p>
+			</div>
+			<div class="col-md-4 typography--exo">
+				<p class="large-text">Aa</p>
+				<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>!@#$%^&*-_=+;:’”,.?<>/\|{}[]()</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="team padding-100 padding-50-sm">
+		<h2 class="mid-text padding-50 text-center-sm">Design Team</h2>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row text-center">
+					<div class="col-sm-6">
+						<%= image_tag 'self.png', alt:'Kristiana Vellucci Illustration', class:'center team--image' %>
+						<h3>Kristiana Vellucci</h3>
+						<p>Design/Front-End</p>
+					</div>
+					<div class="col-sm-6">
+						<%= image_tag 'alex.png', alt:'Alex Smith Illustration', class:'center team--image' %>
+						<h3>Alex Smith</h3>
+						<p>Design/Front-End</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<p class="text-center-sm">Clearly I don’t do very much because my current site kind of sort of really doesn’t exist. Maybe one day I’ll actually do work on my personal site. I’ll be in Europe until the middle of May. I’m mentioning that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs. <br>I’m mentioning that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs. I’m me that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="colours white">
+		<div class="row">
+			<div class="col-md-6 colours--primary colours--block padding-50">
+				<p>Green is the primary colour <br> of SoftwareReviews and should be <br> the standout colour on all <br> material</p>
+				<p class="font-800">#93bb3f/48 8 99 0</p>
+			</div>
+			<div class="col-md-6 colours--secondary colours--block padding-50">
+				<p>Purple is the main accent colour <br> of SoftwareReviews</p>
+				<p class="font-800">#8555a5/55 78 0 0</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 colours--success colours--block padding-50">
+				<p>Success</p>
+				<p>#c0d88d</p>
+			</div>
+			<div class="col-md-3 colours--warning colours--block padding-50">
+				<p>Warning</p>
+				<p>#c0d88d</p>
+			</div>
+			<div class="col-md-3 colours--danger colours--block padding-50">
+				<p>Danger</p>
+				<p>#eb0000</p>
+			</div>
+			<div class="col-md-3 colours--almost colours--block padding-50">
+				<p>Almost</p>
+				<p>#c0d88d</p>
+			</div>
+		</div>
+	</section>
+	<section class="portfolio-nav">
+		<div class="row">
+			<div class="col-md-6 padding-100">
+				<p>Previous</p>
+			</div>
+			<div class="col-md-6 padding-100 light-grey-bg">
+				<p>Next</p>
+			</div>
+		</div>
+	</section>
+</div>
+<footer class="dark-bg white font-100">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3 footer-img">
+				<%= image_tag 'logo.png', alt:'Logo'%>
+			</div>
+			<div class="col-md-9 padding-tb-50">
+				<ul>
+					<li class="footer--nav-item">Portfolio</li>
+					<li class="footer--nav-item">About</li>
+					<li class="footer--nav-item">Contact</li>
+					<li class="footer--nav-item">Blog</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 text-center padding-50">
+				<a href="#" class="dark-grey margin-5"><span class="footer-sm fa fa-linkedin white-bg"></span></a>
+				<a href="#" class="dark-grey margin-5"><span class="footer-sm fa fa-instagram white-bg"></span></a>
+				<a href="#" class="dark-grey margin-5"><span class="footer-sm fa fa-github white-bg"></span></a>
+				<a href="#" class="dark-grey margin-5"><span class="footer-sm fa fa-pinterest-p white-bg"></span></a>
+				<p class="padding-25">Made by Yours Truly</p>
+			</div>
+			<div class="col-md-9 hidden-xs">
+				<div class="col-md-3 light-grey-bg padding-100">1</div>
+				<div class="col-md-3">2</div>
+				<div class="col-md-3 light-grey-bg padding-100">3</div>
+				<div class="col-md-3">4</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- Work Pages: Forrat's Chocolate -->
+<section class="project-header forrats-header white padding-50">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8">
+				<%= image_tag 'logo.png', alt:'Logo'%>
+			</div>
+			<div class="col-md-4">
+				<h2 class="text-right">Menu</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 project-header--title">
+				<h1 class="large-text text-center">Forrat's Chocolate</h1>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="container">
+	<section class="details padding-50">
+		<div class="row">
+			<div class="col-md-8">
+				<h3 class="details-category light-grey">Design, Art Direction</h3>
+				<h2 class="details--name light-grey">Forrat's Chocolate</h2>
+				<p class="details--description">
+					Clearly I don’t do very much because my current site kind of sort of really doesn’t exist. Maybe one day I’ll actually do work on my personal site. I’ll be in Europe until the middle of May. I’m mentioning that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs.
+					<br>
+ 					I’m mentioning that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs.
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h2 class="mid-grey margin-bottom-50">Project Details</h2>
+				<div class="row border-bottom margin-5">
+					<div class="col-md-4 no-padding">
+						<h3 class="no-margin mid-grey">Title</h3>
+					</div>
+					<div class="col-md-8 no-padding">
+						<p>Download</p>
+					</div>
+				</div>
+				<div class="row border-bottom margin-5">
+					<div class="col-md-4 no-padding">
+						<h3 class="no-margin mid-grey">Date</h3>
+					</div>
+					<div class="col-md-8 no-padding">
+						<p>SoftwareReviews</p>
+					</div>
+				</div>
+				<div class="row border-bottom margin-5">
+					<div class="col-md-4 no-padding">
+						<h3 class="no-margin mid-grey">Tags</h3>
+					</div>
+					<div class="col-md-8 no-padding">
+						<p>SoftwareReviews</p>
+					</div>
+				</div>
+				<div class="row border-bottom margin-5">
+					<div class="col-md-4 no-padding">
+						<h3 class="no-margin mid-grey">Url</h3>
+					</div>
+					<div class="col-md-8 no-padding">
+						<p>Download</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<div class="container">
+	<section class="site">
+		<div class="row">
+			<div class="col-md-5">
+				<h2 class="mid-text">Logo</h2>
+				<div class="row">
+					<div class="col-md-5">
+						<p class="font-700">Art Direction</p>
+						<p class="font-700">Design</p>
+						<div class="row">
+							<div class="col-md-2">1</div>
+							<div class="col-md-10">Color #1</div>
+						</div>
+						<div class="row">
+							<div class="col-md-2">1</div>
+							<div class="col-md-10">Color #1</div>
+						</div>
+						<div class="row">
+							<div class="col-md-2">1</div>
+							<div class="col-md-10">Color #1</div>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<p>Clearly I don't do very much because my current site kind of sort of really doesn't exist. Maybe one day I'll actually do work on my personal site. I'll be in Europe until the middle of May. I'm mentioning that he so when i read it i remember how badly I loafted. It worked.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<img src="#" alt="Logo">
+			</div>
+		</div>
+	</section>
+	<section class="typography">
+		<h2 class="mid-text padding-50 text-center-sm">Typography</h2>
+		<div class="row text-center">
+			<div class="col-md-4 typography--montserrat">
+				<p class="large-text">Aa</p>
+				<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>!@#$%^&*-_=+;:’”,.?<>/\|{}[]()</p>
+			</div>
+			<div class="col-md-4 typography--roboto">
+				<p class="large-text">Aa</p>
+				<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>!@#$%^&*-_=+;:’”,.?<>/\|{}[]()</p>
+			</div>
+			<div class="col-md-4 typography--exo">
+				<p>This is some random text to describe the font choices I made here.</p>
+			</div>
+		</div>
+	</section>
+</div>
+
+<div class="container-fluid">
+	<section class="colours white">
+		<div class="row">
+			<div class="col-md-3 colours--success colours--block padding-50">
+				<p>Success</p>
+				<p>#c0d88d</p>
+			</div>
+			<div class="col-md-3 colours--warning colours--block padding-50">
+				<p>Warning</p>
+				<p>#c0d88d</p>
+			</div>
+			<div class="col-md-3 colours--danger colours--block padding-50">
+				<p>Danger</p>
+				<p>#eb0000</p>
+			</div>
+			<div class="col-md-3 colours--almost colours--block padding-50">
+				<p>Almost</p>
+				<p>#c0d88d</p>
+			</div>
+		</div>
+	</section>
+	<section class="site padding-tb-100">
+		<div class="row">
+			<div class="col-md-8">
+				<%= image_tag 'sr-website.png', alt:'Desktop Survey', class:'center width-100' %>
+			</div>
+			<div class="col-md-4">
+				<h2 class="mid-text padding-50 light-grey text-center-sm">Website</h2>
+				<p class="padding-lr-50 text-center-sm">Clearly I don’t do very much because my current site kind of sort of really doesn’t exist. Maybe one day I’ll actually do work on my personal site. I’ll be in Europe until the middle of May. I’m mentioning that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs.
+				<br>
+			 	I’m mentioning that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs. I’m me that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs.</p>
+			</div>
+		</div>
+	</section>
+	<section class="icons padding-tb-100">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-md-2 col-md-offset-1">
+						<img src="#" alt="Icon 1">
+					</div>
+					<div class="col-md-2">
+						<img src="#" alt="Icon 1">
+					</div>
+					<div class="col-md-2">
+						<img src="#" alt="Icon 1">
+					</div>
+					<div class="col-md-2">
+						<img src="#" alt="Icon 1">
+					</div>
+					<div class="col-md-2">
+						<img src="#" alt="Icon 1">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2 col-md-offset-1">
+						<img src="#" alt="Icon 1">
+					</div>
+					<div class="col-md-2">
+						<img src="#" alt="Icon 1">
+					</div>
+					<div class="col-md-2">
+						<img src="#" alt="Icon 1">
+					</div>
+					<div class="col-md-2">
+						<img src="#" alt="Icon 1">
+					</div>
+					<div class="col-md-2">
+						<img src="#" alt="Icon 1">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2 col-md-offset-1">
+						<img src="#" alt="Icon 1">
+					</div>
+					<div class="col-md-2">
+						<img src="#" alt="Icon 1">
+					</div>
+					<div class="col-md-2">
+						<img src="#" alt="Icon 1">
+					</div>
+					<div class="col-md-2">
+						<img src="#" alt="Icon 1">
+					</div>
+					<div class="col-md-2">
+						<img src="#" alt="Icon 1">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h2 class="mid-text padding-50 light-grey text-center-sm">Website</h2>
+				<p class="padding-lr-50 text-center-sm">Clearly I don’t do very much because my current site kind of sort of really doesn’t exist. Maybe one day I’ll actually do work on my personal site. I’ll be in Europe until the middle of May. I’m mentioning that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs.
+				<br>
+			 	I’m mentioning that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs. I’m me that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs.</p>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="mobile-survey">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="mid-text padding-50 light-grey text-center-sm">Mobile Survey</h2>
+				<%= image_tag 'mobile-survey.jpg', alt:'Desktop Survey', class:'center width-100' %>
+			</div>
+		</div>
+	</section>
+
+	<section class="desktop-survey">
+		<div class="row">
+			<div class="col-md-4 padding-tb-100">
+				<h2 class="mid-text padding-50 white text-center-sm">Desktop Survey</h2>
+				<p class="padding-lr-50 text-center-sm">Clearly I don’t do very much because my current site kind of sort of really doesn’t exist. Maybe one day I’ll actually do work on my personal site. I’ll be in Europe until the middle of May. I’m mentioning that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs.</p>
+			</div>
+			<div class="col-md-8">
+				
+
+
+
+
+				<%= image_tag 'desktop-survey.jpg', alt:'Desktop Survey', class:'width-100' %>
+			</div>
+		</div>
+	</section>
+
+	<section class="typography padding-100 padding-50-sm">
+		<h2 class="mid-text padding-50 text-center-sm">Typography</h2>
+		<div class="row text-center">
+			<div class="col-md-4 typography--montserrat">
+				<p class="large-text">Aa</p>
+				<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>!@#$%^&*-_=+;:’”,.?<>/\|{}[]()</p>
+			</div>
+			<div class="col-md-4 typography--roboto">
+				<p class="large-text">Aa</p>
+				<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>!@#$%^&*-_=+;:’”,.?<>/\|{}[]()</p>
+			</div>
+			<div class="col-md-4 typography--exo">
+				<p class="large-text">Aa</p>
+				<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>!@#$%^&*-_=+;:’”,.?<>/\|{}[]()</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="team padding-100 padding-50-sm">
+		<h2 class="mid-text padding-50 text-center-sm">Design Team</h2>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row text-center">
+					<div class="col-sm-6">
+						<%= image_tag 'self.png', alt:'Kristiana Vellucci Illustration', class:'center team--image' %>
+						<h3>Kristiana Vellucci</h3>
+						<p>Design/Front-End</p>
+					</div>
+					<div class="col-sm-6">
+						<%= image_tag 'alex.png', alt:'Alex Smith Illustration', class:'center team--image' %>
+						<h3>Alex Smith</h3>
+						<p>Design/Front-End</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<p class="text-center-sm">Clearly I don’t do very much because my current site kind of sort of really doesn’t exist. Maybe one day I’ll actually do work on my personal site. I’ll be in Europe until the middle of May. I’m mentioning that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs. <br>I’m mentioning that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs. I’m me that here so when I look back and realize how hard I loafted I’ll feel pretty bad about stuffs.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="colours white">
+		<div class="row">
+			<div class="col-md-6 colours--primary colours--block padding-50">
+				<p>Green is the primary colour <br> of SoftwareReviews and should be <br> the standout colour on all <br> material</p>
+				<p class="font-800">#93bb3f/48 8 99 0</p>
+			</div>
+			<div class="col-md-6 colours--secondary colours--block padding-50">
+				<p>Purple is the main accent colour <br> of SoftwareReviews</p>
+				<p class="font-800">#8555a5/55 78 0 0</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 colours--success colours--block padding-50">
+				<p>Success</p>
+				<p>#c0d88d</p>
+			</div>
+			<div class="col-md-3 colours--warning colours--block padding-50">
+				<p>Warning</p>
+				<p>#c0d88d</p>
+			</div>
+			<div class="col-md-3 colours--danger colours--block padding-50">
+				<p>Danger</p>
+				<p>#eb0000</p>
+			</div>
+			<div class="col-md-3 colours--almost colours--block padding-50">
+				<p>Almost</p>
+				<p>#c0d88d</p>
+			</div>
+		</div>
+	</section>
+	<section class="portfolio-nav">
+		<div class="row">
+			<div class="col-md-6 padding-100">
+				<p>Previous</p>
+			</div>
+			<div class="col-md-6 padding-100 light-grey-bg">
+				<p>Next</p>
+			</div>
+		</div>
+	</section>
+</div>
+<footer class="dark-bg white font-100">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3 footer-img">
+				<%= image_tag 'logo.png', alt:'Logo'%>
+			</div>
+			<div class="col-md-9 padding-tb-50">
+				<ul>
+					<li class="footer--nav-item">Portfolio</li>
+					<li class="footer--nav-item">About</li>
+					<li class="footer--nav-item">Contact</li>
+					<li class="footer--nav-item">Blog</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 text-center padding-50">
+				<a href="#" class="dark-grey margin-5"><span class="footer-sm fa fa-linkedin white-bg"></span></a>
+				<a href="#" class="dark-grey margin-5"><span class="footer-sm fa fa-instagram white-bg"></span></a>
+				<a href="#" class="dark-grey margin-5"><span class="footer-sm fa fa-github white-bg"></span></a>
+				<a href="#" class="dark-grey margin-5"><span class="footer-sm fa fa-pinterest-p white-bg"></span></a>
+				<p class="padding-25">Made by Yours Truly</p>
+			</div>
+			<div class="col-md-9 hidden-xs">
+				<div class="col-md-3 light-grey-bg padding-100">1</div>
+				<div class="col-md-3">2</div>
+				<div class="col-md-3 light-grey-bg padding-100">3</div>
 				<div class="col-md-3">4</div>
 			</div>
 		</div>
